@@ -62,6 +62,8 @@ Example configurations can be found in `configs/imdb.yaml` and `configs/ag_news.
 
 ## Project Structure
 
+Please download the [dataset](https://drive.google.com/drive/folders/1hFptMiOU6QmqqqXJbZFG6aCzx9RB_-8n?usp=drive_link)
+
 ```
 .
 ├── configs/                # Configuration files
