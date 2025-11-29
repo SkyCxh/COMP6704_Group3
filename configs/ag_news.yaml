@@ -1,0 +1,28 @@
+# configs/ag_news.yaml
+
+dataset:
+  name: ag_news       # 使用 AG News 四分类数据集
+  max_samples: null   # null 表示用完整训练集（约 120k 条）
+
+embeddings:
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  batch_size: 128     # 算力充足可以稍微大一点
+
+optimization:
+  R: 2.0              # Frobenius 范数约束 ||W||_F <= R
+  C: 1.0              # 元素级 box 约束 |W_ij| <= C
+  lr: 0.1
+  max_iter: 200       # 多分类 & 全量数据，适当调大迭代次数
+  batch_size: 128     # SPGD 的 mini-batch 大小
+  epochs: 200         # SPGD epoch 数量
+  rho_l2: 10.0
+  rho_box: 10.0
+  barrier_t: 1.0
+  barrier_lr: 0.05
+
+experiment:
+  train_ratio: 0.8
+  seed: 123
+
+paths:
+  processed_dir: data/processed/ag_news

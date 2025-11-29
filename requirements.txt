@@ -1,0 +1,23 @@
+# 核心数值计算 & 科学计算
+numpy
+scipy
+
+# 机器学习工具（train/val 划分等）
+scikit-learn
+
+# 配置文件读取（YAML）
+pyyaml
+
+# 画图（收敛曲线、柱状图）
+matplotlib
+
+# HuggingFace 数据集（如 IMDb）
+datasets
+
+# 大语言模型相关依赖：
+# - torch: 深度学习框架
+# - transformers: HuggingFace 模型
+# - sentence-transformers: 句向量 / 文本嵌入模型（我们用它来抽 LLM embedding）
+torch
+transformers
+sentence-transformers

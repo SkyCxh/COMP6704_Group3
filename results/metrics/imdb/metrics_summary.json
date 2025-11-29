@@ -1,0 +1,32 @@
+{
+  "pgd": {
+    "final_train_loss": 0.6688048960894346,
+    "final_val_loss": 0.6693874974250793,
+    "final_train_acc": 0.753,
+    "final_val_acc": 0.7584
+  },
+  "spgd": {
+    "final_train_loss": 0.6276350282117724,
+    "final_val_loss": 0.6294133727788925,
+    "final_train_acc": 0.76475,
+    "final_val_acc": 0.7634
+  },
+  "penalty": {
+    "final_train_loss": 0.6688048960894346,
+    "final_val_loss": 0.6693874974250793,
+    "final_train_acc": 0.753,
+    "final_val_acc": 0.7584
+  },
+  "barrier": {
+    "final_train_loss": 0.6926106916636229,
+    "final_val_loss": 0.6926258831501008,
+    "final_train_acc": 0.75435,
+    "final_val_acc": 0.755
+  },
+  "solver": {
+    "final_train_loss": 0.6276078972231338,
+    "final_val_loss": 0.6293919397445534,
+    "final_train_acc": 0.76735,
+    "final_val_acc": 0.7624
+  }
+}

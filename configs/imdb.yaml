@@ -1,0 +1,28 @@
+# configs/default.yaml
+
+dataset:
+  name: imdb          # 数据集名称，目前用 imdb 二分类
+  max_samples: null   # 最多使用多少条样本（可以根据机器性能调整）
+
+embeddings:
+  model_name: sentence-transformers/all-MiniLM-L6-v2  # 句向量模型名称
+  batch_size: 64                                       # 抽 embedding 时的 batch 大小
+
+optimization:
+  R: 2.0            # L2 范数约束上界 ||w||_2 <= R
+  C: 1.0            # 每个 w_j 的box约束 |w_j| <= C
+  lr: 0.1           # PGD/SPGD 等的学习率
+  max_iter: 200     # PGD/Penalty/Barrier 的最大迭代次数
+  batch_size: 64    # SPGD 的 mini-batch 大小
+  epochs: 200        # SPGD 的训练轮数
+  rho_l2: 10.0      # Penalty 法中 L2 约束惩罚系数
+  rho_box: 10.0     # Penalty 法中 box 约束惩罚系数
+  barrier_t: 1.0    # Barrier 法的初始 t 参数
+  barrier_lr: 0.05  # Barrier 法的学习率（一般稍小）
+
+experiment:
+  train_ratio: 0.8  # 训练集比例
+  seed: 42          # 随机种子，保证可复现
+
+paths:
+  processed_dir: data/processed/imdb

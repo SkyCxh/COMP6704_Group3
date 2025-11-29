@@ -1,0 +1,26 @@
+{
+  "pgd": {
+    "final_train_loss": 1.1596412658691406,
+    "final_val_loss": 1.1605714559555054,
+    "final_train_acc": 0.8595208333333333,
+    "final_val_acc": 0.8615416666666667
+  },
+  "spgd": {
+    "final_train_loss": 1.1599609851837158,
+    "final_val_loss": 1.1608994007110596,
+    "final_train_acc": 0.8472291666666667,
+    "final_val_acc": 0.8460833333333333
+  },
+  "penalty": {
+    "final_train_loss": 1.158553123474121,
+    "final_val_loss": 1.1594876050949097,
+    "final_train_acc": 0.8595625,
+    "final_val_acc": 0.8614583333333333
+  },
+  "barrier": {
+    "final_train_loss": 1.380375862121582,
+    "final_val_loss": 1.3804006576538086,
+    "final_train_acc": 0.856,
+    "final_val_acc": 0.8573333333333333
+  }
+}
